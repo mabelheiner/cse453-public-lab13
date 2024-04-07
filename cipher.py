@@ -42,30 +42,32 @@ class Cipher:
 
         # The encrypt pseudocode
         pc = """Encryption Pseudocode: 
-        \tInitialize an empty string to store the encrypted text
-        Convert the password to uppercase for consistency
+        \tciphertext <- empty string
+        password <- uppercase
         Repeat the password to match the length of the plaintext, using modular arithmetic
-        Iterate through each character in the plaintext:
-            If the character is a letter:
+        FOR character in the plaintext:
+            IF the character is a letter:
                 Shift it by the corresponding letter in the password
                 Wrap around the alphabet if necessary
-                Append the encrypted character to the result string
-            If the character is not a letter, shift it around to the corresponding number
-                Append the encrypted character to the result string
-        Return the encrypted text\n"""
+                encrypted_char <- character 
+            IF the character is not a letter, shift it around to the corresponding number
+                encrypted_char <- character 
+            encrypted_text <- stirng(encrypted_char)
+        RETURN encrypted_text\n"""
 
         # The decrypt pseudocode
         pc += """Decryption Pseudocode: 
-        \tInitialize an empty string to store the decrypted text
-        Convert the password to uppercase for consistency
+        \tplaintext <- empty string
+        password <- uppercase
         Repeat the password to match the length of the encrypted text, using modular arithmetic
-        Iterate through each character in the encrypted text:
+        FOR character in the ciphertext
             If the character is a letter:
                 Shift it back by the corresponding letter in the password
                 Wrap around the alphabet if necessary
-                Append the decrypted character to the result string
+                decrypted_char <- character
             If the character is not a letter, shift it back to the digit in the password
-                Append the decrypted character to the result string
+                decrypted_char <- character
+            plaintext <- decrypted_char + result string
         Return the decrypted text\n"""
 
         return pc
