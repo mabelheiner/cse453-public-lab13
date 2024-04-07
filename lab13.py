@@ -58,10 +58,8 @@ def get_report(cipher):
 def main():
 
     the_cipher = cipher.Cipher() # TODO: replace with your cipher class
-    the_example_cipher = example.Example()
 
     get_report(the_cipher)  # generate the report
-    get_report(the_example_cipher)
 
 
 if __name__ == "__main__":
