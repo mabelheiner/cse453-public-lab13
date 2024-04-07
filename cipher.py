@@ -74,7 +74,8 @@ class Cipher:
 
     ##########################################################################
     # ENCRYPT
-    # TODO: ADD description
+    # TODO: This function will use the Vigenère cipher to encrypt plaintext 
+    # with a password and return the ciphertext.
     ##########################################################################
     def encrypt(self, plaintext, password):
         ciphertext = ''
@@ -98,7 +99,8 @@ class Cipher:
 
     ##########################################################################
     # DECRYPT
-    # TODO: ADD description
+    # TODO: This function will use the Vigenère cipher to decrypt ciphertext
+    # with a password and return the plaintext.
     ##########################################################################
     def decrypt(self, ciphertext, password):
         plaintext = ''
