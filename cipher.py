@@ -68,7 +68,7 @@ class Cipher:
             If the character is not a letter, shift it back to the digit in the password
                 decrypted_char <- character
             plaintext <- decrypted_char + result string
-        Return the decrypted text\n"""
+        RETURN the decrypted text\n"""
 
         return pc
 
